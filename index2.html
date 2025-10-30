@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ward No. 2 | Lalitpur Municipality</title>
+  <link rel="stylesheet" href="service.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2kb8y73Fh_hfP_2FxT19vxvzCQcdJZbc_XQ&s">
+      <div class="title">
+        <h1>Ward No. 2 - Lalitpur Metropolitan City</h1>
+        <p>Government of Nepal | Local Ward Office</p>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About Ward</a></li>
+      <li><a href="#services">Online Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="hero">
+    <h2>Welcome to Ward No. 2, Lalitpur Metropolitan City</h2>
+    <p>Providing efficient and citizen-friendly local government services.</p>
+  </section>
+
+  <section id="about">
+    <h2>About Ward No. 2</h2>
+    <p>
+      Ward No. 2 of Lalitpur Metropolitan City is dedicated to providing transparent and accessible services 
+      to its residents. Citizens can apply for various registrations online and visit the ward office for document verification.
+    </p>
+  </section>
+
+  <section id="services">
+    <h2>Online Application Form</h2>
+    <p>Select a service and fill out the required details below.</p>
+
+    <form id="applyForm" action="submit.php" method="POST">
+      <label for="service">Select Service:</label>
+      <select name="service" id="service" required>
+        <option value="">-- Choose Service --</option>
+        <option value="Marriage Registration">Marriage Registration</option>
+        <option value="Citizenship Application">Citizenship Application</option>
+        <option value="Death Registration">Death Registration</option>
+        <option value="Senior Citizen ID">Senior Citizen ID</option>
+        <option value="Migration Registration">Migration Registration</option>
+      </select>
+
+      <div class="form-group">
+        <label>Full Name:</label>
+        <input type="text" name="fullName" required>
+      </div>
+
+      <div class="form-group">
+        <label>Email Address:</label>
+        <input type="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label>Phone Number:</label>
+        <input type="text" name="phone" required>
+      </div>
+
+      <div class="form-group">
+        <label>Address:</label>
+        <input type="text" name="address" required>
+      </div>
+
+      <div id="extraFields"></div>
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </section>
+
+  <footer id="contact">
+    <h3>Contact Ward Office</h3>
+    <p>Ward No. 2 Office, Lalitpur Metropolitan City<br>
+       Phone: 01-552XXXX | Email: ward2@lalitpurmun.gov.np</p>
+    <p>&copy; 2025 Ward No. 2, Lalitpur Metropolitan City. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script2.js"></script>
+</body>
+</html>
